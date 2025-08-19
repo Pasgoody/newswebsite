@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="#">Gworld <span>News US</span></a>
+            </div>
+
+            <!-- Links -->
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Politics</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Health</a></li>
+                <li><a href="#">World</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+
+            <!-- Mobile Menu Button -->
+            <div class="menu-btn" onclick="toggleMenu()">☰</div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <ul class="mobile-menu" id="mobileMenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Politics</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Health</a></li>
+            <li><a href="#">World</a></li>
+            <li><a href="#">More</a></li>
+        </ul>
+    </nav>
+
+
+    <section class="gridContent" id="gridContent">
+        <div class="news-grid" id="news-grid">
+
+        </div>
+
+    </section>
+    <section class="single-article" id="single-article" style="display: none;">
+        <button id="backBtn">←Back</button>
+        <div id="article-content"></div>
+    </section>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

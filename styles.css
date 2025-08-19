@@ -1,0 +1,158 @@
+
+#single-article {
+  display: none;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  background-color: rgb(237, 227, 227);
+    border-radius: 10px;
+}
+
+
+#single-article img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+
+#single-article h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+
+#single-article p {
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+#single-article a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: #0077cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+#single-article a:hover {
+  background-color: #005fa3;
+}
+#backBtn{
+      background-color: #0077cc;
+      padding: 10px 30px;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 5px;
+}
+#backBtn:hover{
+ cursor: pointer;
+}
+.news-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  max-width: 100%;
+}
+
+
+  .news-title {
+    max-width: 250px; /* force truncation width on mobile */
+  }
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+   /* Navbar */
+.navbar {
+  background: #000;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+/* Logo */
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
+  text-decoration: none;
+}
+.logo span {
+  color: #ccc;
+  font-weight: normal;
+}
+
+/* Desktop Nav Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.nav-links li a:hover {
+  color: red;
+}
+
+/* Mobile Menu Button */
+.menu-btn {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: #111;
+  padding: 10px;
+}
+.mobile-menu li {
+  list-style: none;
+}
+.mobile-menu li a {
+  display: block;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid #333;
+}
+.mobile-menu li a:hover {
+  background: red;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .mobile-menu.show {
+    display: flex;
+  }
+}
